@@ -54,20 +54,13 @@ Here's a basic example of how to use the `PersonalAccount` class:
 java
 public class Main {
     public static void main(String[] args) {
-        // Create a new PersonalAccount instance
         PersonalAccount account = new PersonalAccount(78945, "Saadat Nurbekova");
 
-        // Deposit money
         account.deposit(500.0);
-        account.deposit(200.0);
+        account.withdraw(200.0);
+        account.deposit(100.0);
 
-        // Withdraw money
-        account.withdraw(100.0);
-
-        // Check balance
         System.out.println("Current balance: $" + account.getBalance());
-
-        // Print transaction history
         account.printTransactionHistory();
     }
 }
